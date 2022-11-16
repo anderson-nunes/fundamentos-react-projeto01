@@ -4,6 +4,8 @@ import { Sidebar } from "./components/Sidebar";
 import styles from "./App.module.css";
 import "./global.css";
 
+//criação de posts dentro do array
+
 const posts = [
   {
     id: 1,
@@ -57,6 +59,8 @@ export function App() {
         <Sidebar />
         <main>
           {posts.map((post) => {
+            // post = variável que esta armazendo os postes.
+            // usar o método map() para fazer uma iteração, para retornar algo.
             return (
               <Post
                 key={post.id}
